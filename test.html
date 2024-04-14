@@ -1,0 +1,21 @@
+using NUnit.Framework;
+
+[TestFixture]
+public class PruebasHolaMundo
+{
+    [Test]
+    public void PruebaMensajeHolaMundo()
+    {
+        // Llama al método para obtener el mensaje
+        string mensaje = ObtenerMensaje();
+        
+        // Verifica que el mensaje sea "Hola Mundo"
+        Assert.AreEqual("Hola Mundo", mensaje);
+    }
+
+    // Método para obtener el mensaje
+    private string ObtenerMensaje()
+    {
+        return "Hola Mundo";
+    }
+}
